@@ -11,14 +11,14 @@
   <h2>Environment Setup</h2>
   <p>To set up the environment for this project, follow these steps:</p>
   <ul>
-   1. **Ensure you have Node.js and npm installed.**
-2. **Clone the repository:**
+    1. **Ensure you have Node.js and npm installed.**
+    2. **Clone the repository:**
    ```bash
-   git clone https://github.com/VictoriaReyes1803/UserSystemFront.git
-   cd usersystem
     
-    </ol>
-    <li>Run <code>npm install</code> to install dependencies.</li>
+        <ol>git clone https://github.com/VictoriaReyes1803/UserSystemFront.git
+         cd usersystem</ol>
+   
+  <li>Run <code>npm install</code> to install dependencies.</li>
   </ul>
   
   <p>This application uses a backend with database integration.:</p>
