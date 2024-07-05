@@ -11,9 +11,12 @@
   <h2>Environment Setup</h2>
   <p>To set up the environment for this project, follow these steps:</p>
   <ul>
-    <li>Ensure you have Node.js and npm installed.</li>
-    <li>Clone this repository to your local machine.</li>
-    <li>Navigate to the project directory in your terminal.</li>
+    1. **Ensure you have Node.js and npm installed.**
+    2. **Clone the repository:**
+   ```bash
+   git clone https://github.com/VictoriaReyes1803/UserSystemFront.git
+   cd usersystem
+   ```
     <li>Run <code>npm install</code> to install dependencies.</li>
   </ul>
   
