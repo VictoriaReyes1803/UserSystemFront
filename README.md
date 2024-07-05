@@ -21,7 +21,7 @@
   <li>Run <code>npm install</code> to install dependencies.</li>
 
   
-  <p>This application uses a backend with database integration.:</p>
+  <p>This application uses a backend with database integration. you can start the development server:</p>
 
   <h2>Contributing</h2>
   <p>If you would like to contribute to this project, please follow these guidelines:</p>
