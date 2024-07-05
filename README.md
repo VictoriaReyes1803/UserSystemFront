@@ -13,10 +13,11 @@
   <ul>
     1. **Ensure you have Node.js and npm installed.**
     2. **Clone the repository:**
-   ```bash
-   git clone https://github.com/VictoriaReyes1803/UserSystemFront.git
-   cd usersystem
-   ```
+       ```bash
+       git clone https://github.com/VictoriaReyes1803/UserSystemFront.git
+       cd usersystem
+       ```
+    </ol>
     <li>Run <code>npm install</code> to install dependencies.</li>
   </ul>
   
