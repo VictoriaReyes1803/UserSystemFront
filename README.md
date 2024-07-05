@@ -9,8 +9,9 @@
   <h1>User Management App with Vuetify</h1>
   
   <h2>Environment Setup</h2>
+  <ol>
   <p>To set up the environment for this project, follow these steps:</p>
- 
+   
   1. **Ensure you have Node.js and npm installed**
   2. **Clone the repository:**
      ```bash
@@ -20,8 +21,11 @@
    
   <li>Run <code>npm install</code> to install dependencies.</li>
 
-  
-  <p>This application uses a backend with database integration. you can start the development server:</p>
+  </ol>
+  <p>This application uses a backend with database integration. you can start the development server</p>
+       ```bash
+
+             php artisan serve
 
   <h2>Contributing</h2>
   <p>If you would like to contribute to this project, please follow these guidelines:</p>
