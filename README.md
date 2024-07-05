@@ -16,15 +16,19 @@
      ```bash
     
         git clone https://github.com/VictoriaReyes1803/UserSystemFront.git
+  3. **Navigate to the project directory in your terminal.**
+     ```bash
          cd usersystem
    
-   3. **Run <code>npm install</code> to install dependencies.**
+  4. **Run <code>npm install</code> to install dependencies.**
 
-  <p>This application uses a backend with database integration. you can start the development server</p>
-         ```bash
-       
-             php artisan serve
-       ```
+  5. **<p>This application uses a backend with database integration. you can start the development server</p>**
+     ```bash
+               php artisan serve
+  <h2>Usage</h2>
+  <p>After setting up the environment and configuring the database, you can start the development server:</p>
+  <pre><code>npm run serve</code></pre>
+  
   <h2>Contributing</h2>
   <p>If you would like to contribute to this project, please follow these guidelines:</p>
   <ul>
