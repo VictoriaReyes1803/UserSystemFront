@@ -2,13 +2,17 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 const ENDPOINT_PATH = "http://127.0.0.1:8000/api/";
-
+export function isAuthenticated() {
+    const token = Cookies.get('jwt_token'); 
+    return !!token; 
+ }
 export default {
-    setUserLogged(userLogged) {
-        Cookies.set("userLogged", userLogged);
-      },
+    isAuthenticated() {
+        const token = Cookies.get('jwt_token'); 
+        return !!token; 
+     },
       getUserLogged() {
-        return Cookies.get("userLogged");
+        return Cookies.get("jwt_token");
       },
     register(name,lastname,email, password) {
         const user = { name, lastname, email, password };
@@ -74,4 +78,5 @@ export default {
             },
         });
     }
+    
 };

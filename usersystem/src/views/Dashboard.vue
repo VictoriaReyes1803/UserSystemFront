@@ -8,10 +8,8 @@
               <v-btn icon @click="toggleInfo">
                 <v-icon>mdi-account-circle</v-icon>
               </v-btn>
-              <v-spacer></v-spacer>
               <v-btn color="primary" @click="showAddUserDialog">Add User</v-btn>
-            </v-card-title>
-            <v-divider></v-divider>
+
             <div v-if="showUserInfo">
               <h3>User Information</h3>
               <p><strong>Name:</strong> {{ currentUser.name }}</p>
@@ -19,7 +17,15 @@
               <p><strong>Email:</strong> {{ currentUser.email }}</p>
               
             </div>
-            <v-divider></v-divider>
+            <v-text-field
+            v-model="search"
+            append-icon="mdi-magnify"
+            label="Search"
+            single-line
+            hide-details
+          ></v-text-field>
+            </v-card-title>
+            
             <v-card-text>
             <v-alert v-if="loading" type="info">
                     Loading users...
@@ -28,6 +34,9 @@
                 :headers="headers"
                 :items="users"
                  class="elevation-1"
+                 :loading="loading"
+                 :search="search"
+                 loading-text="Loading..."
                 item-key="id"
                 no-data-text="No users available"
               >
@@ -105,6 +114,7 @@
         currentUser: null,
         showUserInfo: false,
         isProfile: false,
+        search: '',
         headers: [
           { text: 'Name', align: 'start', value: 'name' },
           { text: 'Last Name', value: 'lastname' },
@@ -134,7 +144,9 @@
         } catch (error) {
           console.error('Error fetching users:', error);
         } finally {
-          this.loading = false;}
+          this.loading = false;
+       
+        }
     },
       logout() {
         auth.logout();
@@ -155,7 +167,6 @@
       },
       saveUser() {
         if (this.user.id) {
-          // Actualizar usuario existente
           console.log('user', this.user);
           auth.edituser(this.user.id, this.user.name, this.user.lastname, this.user.email);
           const index = this.users.findIndex(u => u.id === this.user.id);
@@ -190,6 +201,6 @@
   </script>
   
   <style scoped>
-  /* Puedes agregar estilos adicionales aquí si es necesario */
+  
   </style>
   

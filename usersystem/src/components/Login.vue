@@ -49,9 +49,7 @@ export default {
         const user = {
           email: this.email
         }
-        auth.setUserLogged(user);
-
-        if (response.status === 200) {
+        if (response.status === 200 || response.status === 201) {
         Swal.fire({
           icon: 'success',
           title: 'Login successful!',
