@@ -14,20 +14,19 @@
   1. **Ensure you have Node.js and npm installed**
   2. **Clone the repository:**
      ```bash
-    
-        git clone https://github.com/VictoriaReyes1803/UserSystemFront.git
+     git clone https://github.com/VictoriaReyes1803/UserSystemFront.git
   3. **Navigate to the project directory in your terminal.**
      ```bash
-         cd usersystem
+     cd usersystem
    
   4. **Run <code>npm install</code> to install dependencies.**
 
   5. **<p>This application uses a backend with database integration. you can start the development server</p>**
      ```bash
-               php artisan serve
+     php artisan serve
   <h2>Usage</h2>
   <p>After setting up the environment and configuring the database, you can start the development server:</p>
-  <pre><code>npm run serve</code></pre>
+  <pre><code>npm run dev</code></pre>
   
   <h2>Contributing</h2>
   <p>If you would like to contribute to this project, please follow these guidelines:</p>
