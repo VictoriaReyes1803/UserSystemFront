@@ -1,4 +1,4 @@
-# UserSystemFront
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <h1>User Management App with Vuetify</h1>
+  <h1>User Management System with Vuetify</h1>
   
   <h2>Environment Setup</h2>
   <p>To set up the environment for this project, follow these steps:</p>
